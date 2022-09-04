@@ -117,6 +117,8 @@ validation filter kullandık. attribute olarak eklenir. Kod tekrarından kaçın
 action methodlardan direk olarak model sınıflarınızı dönmeyin. İlgili modellerin DTO(data transfer object) sınıflarını dönün. 
 preperty? nedir? araştır.
 
+Mutlaka kodlamadan önce WEB ve API ayağa kalkıyor mu bir çalıştırıp görmek lazım.
+
 2022 preview versiyon indir:
 
 
