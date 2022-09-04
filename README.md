@@ -72,25 +72,28 @@ MySite.Core
 en az 3 katman best practis açısından önemlidir:
 core>repository>service şeklindedir.   apı yada web(mvc)  şeklinde kullanılır.
 
-core:
+![image](https://user-images.githubusercontent.com/44713722/188304160-f0820bb8-4e8c-4fe1-8e32-ede10afa98c6.png)
+Burada web olarak gösterilen örneğin MVC düşüebiliriz.
+
+## core katmanı:
 
 temel katmandır. Proje genelini 
-ne bussinis ne de class tanımlı olacak. 
+ne bussinis ne de class tanımlı olacak.  Projenin genelini oluşturan sınıflar olmalı.
 modeller(entity) olacak
 DTOs olacak
 repositort interfaces
 service Interfaces
-UnitOfWork Interfaces
+UnitOfWork Interfaces (bir dizayn pattern'dir.)
 
 
-reporsitorty katmanı:(data acces layer denirdi önceden)
+## reporsitorty katmanı:(data acces layer denirdi önceden)
 
 core katmanını referans akcak.
 Migration dosyaları olacak. Veri tabanı ile sign olacak dosyalardır.
-seeds dosyaları olacak. Veri tabanına default data atacaksak bunu kullanırız.
+seeds dosyaları olacak. Veri tabanına default data atacaksak bunu kullanırız. Veri tabanına default veri atmak istiyorsak kullanırız.
 Biz burada implement yapıyoruz. Core katmanınında ref alarak.
 
-Service katmanı:
+## Service katmanı:
 
 Mapping işlemi yapılıyor.
 Service Impl 
@@ -98,9 +101,9 @@ Validation code'lar buarrada
 Exceptions burada 
 reporsitory katmanını referans alacak.
 
-ileriki zamnalarda web uygulammız direkt API ile haberleşecek.
+Ek olarak caching katamnı da tabii eklenilebiliyor.
 
-Kursun sonunda 4. katman caching katmanını göreceğiz.
+![image](https://user-images.githubusercontent.com/44713722/188304615-bed92595-a40f-41f9-8a67-92085ff294c5.png)
 
 API yada web uygulamaaız db tarafında dataların cachlenmesini sağlayacak. Biz eğer bir data almak istiyorsak burada cach'te eğer data bulunuyorsa direkt gidip cach ortamından data dönülecek.
 Eğer yoksa repository'den datayı dönecek.
