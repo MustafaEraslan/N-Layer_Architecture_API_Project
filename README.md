@@ -127,3 +127,27 @@ rubbetmq, seper işlemleri yapan servisim var microsevice, ödeme ekranına geld
 sepet servisi q'ya geçiyor. rubbetmq diyor ki önce sepet sonradan ödemeyi çalıştırcam diyor.
 saga pattern microservice'te çok kullanılır.
 Q sistemleri kullanmak lazım
+
+![image](https://user-images.githubusercontent.com/44713722/188330938-8f3934cd-7c53-4a35-bc89-5e5ee3f8cac3.png)
+
+## neden entitiy oluşturuyoruz?
+
+Eğer proje içerisinde bir class'ın veri tabanı tarafında bir karşılığı varsa bunlara entityclass diyoruz. Herhangi bri yerde bir tablo karşılığı yoksa bu normal class'tır.
+
+Abstract class ile new sözcüğü kullanarak yeni nesne oluşturamayız. Soyut yapılardır.
+
+Genelde abstract class proje için ortak nesneleri tanımladığımız yerlerdir.
+
+Interface ile yapabildiklerimizi abstract sınıf ile de yapabiliriz.
+
+![image](https://user-images.githubusercontent.com/44713722/188331711-13d4a8fb-aa92-4efa-afa8-b33abc95c88b.png)
+
+birebir ilişki kuruyoruz.
+
+entity'lerde isimlendirmeyi düzgün yaptığımızda EF tarafından PK otomatik bir şekilde algılanılıyor. Eğer isimlendirme _ gibi karakterler kullanılcaksa bu sefer [foreignkey] kullanmak zorundayız.
+
+
+
+
+
+
