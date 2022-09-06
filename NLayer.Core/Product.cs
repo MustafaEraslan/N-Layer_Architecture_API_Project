@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NLayer.Core
 {
-    public class Product
+    public class Product:BaseEntity
     {
         public string Name { get; set; }
 
@@ -16,7 +16,7 @@ namespace NLayer.Core
 
         public int CategoryId { get; set; }
 
-        public Category Category { get; set; }
+        public Category Cetegory { get; set; }
 
         public ProductFeature ProductFeature { get; set; }
 
