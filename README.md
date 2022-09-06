@@ -146,6 +146,37 @@ birebir ilişki kuruyoruz.
 
 entity'lerde isimlendirmeyi düzgün yaptığımızda EF tarafından PK otomatik bir şekilde algılanılıyor. Eğer isimlendirme _ gibi karakterler kullanılcaksa bu sefer [foreignkey] kullanmak zorundayız.
 
+## net6 nullable:
+
+kodlama esnasında yeşil olan alanları gösterebilir. 
+
+![image](https://user-images.githubusercontent.com/44713722/188697760-8ecf088a-7290-4029-b577-203418ab74b7.png)
+
+Alt bölümdeki alan seçilerek nullable özelliği kapatılabilir.
+![image](https://user-images.githubusercontent.com/44713722/188702958-a798ca4c-7e85-44c9-9427-70111a0b97f2.png)
+
+Veya ctro ile constructure yazabiliriz. Burada alt bölümdeki gibi eğer null ise throw ile exception dön diyebiliyoruz.
+
+        public Product(string name)
+        {
+            Name = name ?? throw new ArgumentNullException(nameof(name));
+
+        }
+        
+Yada şu şekilde dissable olarak nullable kapatabiliriz.        
+
+![image](https://user-images.githubusercontent.com/44713722/188703547-22d618d5-b4fb-4788-98ea-59c4b53d0a0e.png)
+
+## IGenericRepository
+
+![image](https://user-images.githubusercontent.com/44713722/188704453-0133f8a2-1e01-4d26-bf65-98057e847c58.png)
+
+Repository disaign pattern kodumuz ile veritabanı arasına bir katman yerleştirir. Bu katman ile veritabanına yapılcak klasik CRUD işlemlerini her bir entity için yapabilmemizi sağlar. Generic yani muhtemel created, update vs işlemlerini yapabiliyor olacak.
+
+
+
+
+
 
 
 
