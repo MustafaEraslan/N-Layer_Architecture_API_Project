@@ -10,9 +10,7 @@ namespace NLayer.Core
     {
         public string Name { get; set; }
 
-        public ICollection<Product> Products { get; set; }
-
-
+        public ICollection<Product> Products { get; set; } //birden fazla product olabilsin navigation denir. Category'den tüm productları çekebilirim.
 
     }
 }

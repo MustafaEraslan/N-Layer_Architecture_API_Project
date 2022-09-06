@@ -8,6 +8,12 @@ namespace NLayer.Core
 {
     public class Product:BaseEntity
     {
+
+        public Product(string name)
+        {
+            Name = name ?? throw new ArgumentNullException(nameof(name));
+
+        }
         public string Name { get; set; }
 
         public int Stock { get; set; }
@@ -18,7 +24,7 @@ namespace NLayer.Core
 
         public Category Cetegory { get; set; }
 
-        public ProductFeature ProductFeature { get; set; }
+        public ProductFeature ProductFeature { get; set; } //bunların her biri navigation property
 
     }
 }
