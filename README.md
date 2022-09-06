@@ -173,6 +173,8 @@ Yada şu şekilde dissable olarak nullable kapatabiliriz.
 
 Repository disaign pattern kodumuz ile veritabanı arasına bir katman yerleştirir. Bu katman ile veritabanına yapılcak klasik CRUD işlemlerini her bir entity için yapabilmemizi sağlar. Generic yani muhtemel created, update vs işlemlerini yapabiliyor olacak.
 
+## IService
+## IUnitOfWork
 
 
 
