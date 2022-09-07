@@ -2,10 +2,14 @@
 
 ##2. Http Method Tipi Seçimi:
 
-GET: server tararfında istek
+GET: server tararfında istek 
+
 POST: API lerde yeni nesne oluşturmak istiyorsak kullanımalı/pos üzerinden de güncelleme yapılabilir.
+
 PUT: eğer bir nesene üzerinde güncelleme yapacaksak
+
 DELETE: bir nesneyi silmek için kulllanılan http method tipi.
+
 crud işlemleri deniyor.
 #best practices,
 
@@ -174,9 +178,24 @@ Yada şu şekilde dissable olarak nullable kapatabiliriz.
 Repository disaign pattern kodumuz ile veritabanı arasına bir katman yerleştirir. Bu katman ile veritabanına yapılcak klasik CRUD işlemlerini her bir entity için yapabilmemizi sağlar. Generic yani muhtemel created, update vs işlemlerini yapabiliyor olacak.
 
 ## IService
-## IUnitOfWork
+## IUnitOfWork Dissaign pattern nedir?
 
+IUnitOfWork Dissaign pattern, veri tabanına yapılacak olan işlemleri toplu bir şekilde tek bir transaction üzerinden yönetmemize imkan verir.
 
+![image](https://user-images.githubusercontent.com/44713722/188863844-1f7deb1c-59d0-4461-a2d4-fb6f6432ef55.png)
+
+Bir repository üzerinde yapılan işlemler EF tarafından memoryde tutulur. Savechanges çağırdığımız zaman gidip db context nesnesi ile db tarafına yazılır. 
+Unit of Work ise farklı 2 repository olduğu durumu düşünelim. Eğer bir reporsitory'de savechanges başarıkı bir şkeilde çalıştı. Eğer diğerinde başarılı değilse 2 repositorydeki değişiklikleri rollback yapar. 
+
+## AppDbContext
+
+DbContextOptions veritabanı yolunu startup dosyasından verebilmek için yazıyoruz.
+
+## Entity Configuretions
+
+Her bir class library bir assemby'dir. Bu sebeple tüm configuration'ları okuyabiliriz. alt bölümdeki kod ile.
+
+modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
 
 
