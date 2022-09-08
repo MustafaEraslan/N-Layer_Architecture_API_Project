@@ -197,6 +197,12 @@ Her bir class library bir assemby'dir. Bu sebeple tüm configuration'ları okuya
 
 modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
+## Seed Data 
+
+giriş değerleri verebiliriz. 2 tane yöntemi vardır.
+
+1. migration atılırken dataarın iletilmesi
+2. migration atıldıktan sonra uygulama ayağa kaldırıldığında dataların alınması.
 
 
 
