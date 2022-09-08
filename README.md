@@ -204,6 +204,10 @@ giriş değerleri verebiliriz. 2 tane yöntemi vardır.
 1. migration atılırken dataarın iletilmesi
 2. migration atıldıktan sonra uygulama ayağa kaldırıldığında dataların alınması.
 
+AsNoTracking ile EF Core dataları memoriye almasın traking yapmasın ki performanslı olmasın.
+
+remove da asyc yok çünkü db den silmez. remove dediğimizde aslında sadece o entity'in satete'ini delete olarak işaretliyoruz.
+
 
 
 
