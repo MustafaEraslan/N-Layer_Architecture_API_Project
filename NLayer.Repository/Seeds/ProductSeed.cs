@@ -49,7 +49,7 @@ namespace NLayer.Repository.Seeds
             },
             new Product
             {
-                Id = 4,
+                Id = 5,
                 CategoryId = 2,
                 Name = "Kalem 2",
                 Price = 6600,
