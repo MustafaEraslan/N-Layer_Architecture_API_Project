@@ -208,6 +208,22 @@ AsNoTracking ile EF Core dataları memoriye almasın traking yapmasın ki perfor
 
 remove da asyc yok çünkü db den silmez. remove dediğimizde aslında sadece o entity'in satete'ini delete olarak işaretliyoruz.
 
+## Migration
+
+migration bizim code'larımızdaki entitylerimiz ile sql serverdaki tablolarımızın eş olmasını sağlayan bir tool'dur. Bu tool sayaseinde migration komutları girerek
+bizler code tarafındaki entity güncel halini tabloları yansıtabiliyoruz.
+
+![image](https://user-images.githubusercontent.com/44713722/189524188-f968bb97-d716-46be-baa3-01cc2e60c84d.png)
+
+tıkladığımızda kayıtlı db'leri görebiliyoruzz. Bunların her biri instance. + bölümünde localde bulunan db'leri görüp ekleyebiliyoruz.
+
+connection string alınır. API de appjson bölümüne eklenir. 
+
+connection string program cs de tanımlanır.
+
+
+
+
 
 
 
