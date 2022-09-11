@@ -223,7 +223,8 @@ connection string program cs de tanımlanır.
 
 
 
-
+Alınan hatalar:
+An error occurred while accessing the Microsoft.Extensions.Hosting services. Continuing without the application service provider. Error: Cannot instantiate implementation type 'NLayer.Core.UnitOfWorks.IUnitOfWorks' for service type 'NLayer.Core.UnitOfWorks.IUnitOfWorks'.
 
 
 
