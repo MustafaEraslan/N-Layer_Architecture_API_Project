@@ -220,7 +220,7 @@ tıkladığımızda kayıtlı db'leri görebiliyoruzz. Bunların her biri instan
 connection string alınır. API de appjson bölümüne eklenir. 
 
 connection string program cs de tanımlanır.
-
+ 
 
 
 Alınan hatalar:
