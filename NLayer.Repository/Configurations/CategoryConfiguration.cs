@@ -20,8 +20,6 @@ namespace NLayer.Repository.Configurations
 
             builder.ToTable("Categories"); //özel isim verebirliz. Aynı ismi verdim farklı da olabilirdi.
 
-
-
         }
     }
 }
