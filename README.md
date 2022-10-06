@@ -226,6 +226,16 @@ connection string program cs de tanımlanır.
 Alınan hatalar:
 An error occurred while accessing the Microsoft.Extensions.Hosting services. Continuing without the application service provider. Error: Cannot instantiate implementation type 'NLayer.Core.UnitOfWorks.IUnitOfWorks' for service type 'NLayer.Core.UnitOfWorks.IUnitOfWorks'.
 
+## Git & Github hakkında...
+
+bir takımla çalıştığımızda commit atıyorsak proje sahibine bir talep gönderiyor. Pull request denir.
+Benim yaptığım değişiklikler projenin bir parçası olsun mu? Sorusuna yanıt bulabiliyoruz.
+
+versiyonları yeni bir branch üzerinden yapabiliriz.
+
+git --version
+git help detayları getirir.
+
 
 
 
